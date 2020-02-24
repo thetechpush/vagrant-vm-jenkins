@@ -14,8 +14,8 @@ Vagrant.configure(2) do |config|
     svrjend001.vm.network "private_network", ip: "172.42.42.102"
     svrjend001.vm.provider "virtualbox" do |v|
       v.name = "svrjend001"
-      v.memory = 2048
-      v.cpus = 2
+      v.memory = 1300
+      v.cpus = 1
       # Prevent VirtualBox from interfering with host audio stack
       v.customize ["modifyvm", :id, "--audio", "none"]
     end
